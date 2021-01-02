@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portafolio de distintos trabajos que he realizado">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Memo Moreno</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav_item"><a href="#">Home</a></li>
+                <li class="main-nav_item"><a href="#">Lista del mandado</a></li>
+                <li class="main-nav_item"><a href="#">Formularios</a></li>
+                <li class="main-nav_item"><a href="#">Botones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>Lista del mandado</h1>
+                <ul>
+                    <li >Comida en casa</li>
+                    <ol>
+                        <li><a href="https://www.pequerecetas.com/receta/sushi/" target="_blank">Sushi</a></li>
+                        <figure>
+                            <img src="./img/Sushi.jpg" 
+                             alt="Sushi" 
+                             width="200">
+                             <figcaption>Plato de sushi con vegetales</figcaption>
+                        </figure>
+                        <li><a href="https://www.directoalpaladar.com/recetas-de-ensaladas/ensalada-cesar-la-receta-autentica-de-la-ensalada-mas-famosa-del-mundo">Ensalada</a></li>
+                        <figure >
+                            <img src="./img/Ensalada.jpg" 
+                             alt="Ensalada" 
+                             width="200">
+                             <figcaption>Tazón de ensalada verde con arándanos</figcaption>
+                        </figure>
+                    </ol>
+                    <li >Llevar a la oficina</li>
+                    <ol>
+                        <li><a href="https://www.mexicoenmicocina.com/carne-asada/" target="_blank">Carnita Asada</a></li>
+                        <figure>
+                            <img src="./img/Carne.jpg" 
+                             alt="Carne asada con vegetales" 
+                             width="200">
+                             <figcaption>Filete de carne asada</figcaption>
+                        </figure>
+                        <li><a href="https://www.elespanol.com/cocinillas/recetas/microondas/20160122/arroz-frito-rapido-receta-paso/1000386011396_30.html">Arroz Frito</a></li>
+                        <figure>
+                            <img src="./img/Arroz_Frito.jpg" 
+                             alt="Tazón de arroz frito" 
+                             width="200"
+                             height="150">
+                             <figcaption>Tazón de arroz frito</figcaption>
+                             <video 
+                             controls 
+                             width="200" 
+                             height="150" 
+                             preload = "auto">
+                             <source src="./video/RecetaArroz.mp4#t=60,61">
+                             </video>
+                             <figcaption>Receta de arroz frito</figcaption>
+                        </figure>
+                    </ol>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h1>Formulario</h1>
+            <form action="">
+                <label for="Nombre">
+                    <span>Cómo te llamas?</span>
+                    <input type="text" id = "Nombre" placeholder="Tú nombre">
+                </label> 
+                <label for="FechaInicio">
+                    <span>Cuando iniciaste en platzi?</span>
+                    <input type="date" id = "FechaInicio" placeholder="Fecha">
+                </label> 
+                <label for="Horario">
+                    <span>En que horario te gusta estudiar?</span>
+                    <input type="time" id = "Horario" placeholder="Horario">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <section>
+            <h1>Calendario Complejo</h1>
+            <form action="">
+                <label for="Hora">
+                    <span>Hora</span>
+                    <input type="time" id="Hora" name="Hora">
+                </label>
+                <label for="Dia">
+                    <span>Día</span>
+                    <input type="date" id="Dia" name="Dia">
+                </label>
+                <label for="Semana">
+                    <span>Semana</span>
+                    <input type="week" id="Semana" name="Semana">
+                </label>
+                <label for="Mes">
+                    <span>Mes</span>
+                    <input type="month" id="Mes" name="Mes">
+                </label>
+                <input type="submit">
+            </form>
+            <h1>Calendario Simple</h1>
+            <form action="">
+                <label for="cal">
+                    <input type="datetime-local" name="cal" id="cal">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <section>
+            <h1>Autocomplete</h1>
+            <form action="">
+                <label for="Nombre">
+                    <span>Cuál es tu nombre?</span>
+                    <input type="text" id="Nombre" name ="Nombre" autocomplete="name" required>
+                </label>
+                <label for="Correo">
+                    <span>Cuál es tu email?</span>
+                    <input type="email" id="Correo" name ="Correo" autocomplete="email" required>
+                </label>
+                <label for="Pais">
+                    <span>De que país eres?</span>
+                    <input type="text" id ="Pais" name = "Pais" autocomplete="country-name" required>
+                </label>
+                <label for="cp">
+                    <span>Cuál es tu código postal?</span>
+                    <input type="number" id ="cp" name ="cp" autocomplete="postal-code" required>
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <section>
+            <h1>Select no óptimo</h1>
+            <select name="Clases" id="">
+                <option value="JavaScript">Java Script</option>
+                <option value="HTML5">HTML 5</option>
+                <option value="LESS">LESS CSS</option>
+                <option value="WebStandards">Web Standards</option>
+            </select>
+            <h1>Select óptimo</h1>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="Java Script"></option>
+                <option value="HTML 5"></option>
+                <option value="LESS CSS"></option>
+                <option value="Web Standards"></option>
+            </datalist>
+        </section>
+        <section>
+            <h1>Botones</h1>
+            <input type="submit" value="Submit">
+            <button type="submit">Mandar</button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
